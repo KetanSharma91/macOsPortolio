@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Business, Psychology & Self-Help Books 2026</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-900 min-h-screen font-sans">
+    <main class="max-w-3xl mx-auto px-6 py-16">
+      <!-- Header -->
+      <header class="mb-12">
+        <p class="text-sm text-blue-600 mb-3">
+          Books • Psychology • Business • Self-Help
+        </p>
+        <h1
+          class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4"
+        >
+          Must-Read Books for Personal Growth and Business Success
+        </h1>
+        <p class="text-gray-500 text-sm">March 2026 • 15 min read</p>
+      </header>
+
+      <!-- Books Container -->
+      <section id="books-container" class="space-y-12"></section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-4 overflow-hidden">
+      <div
+        class="container mx-auto flex flex-col items-center justify-between gap-4 px-4 md:flex-row"
+      >
+        <p class="">&copy; Ketan Sharma 2026. All rights reserved</p>
+
+        <div class="flex justify-center gap-4 md:justify-start">
+          <a
+            href="https://www.linkedin.com/in/ketan-sharma-b1b0a5288/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-black transition-colors duration-500 ease-in-out hover:text-gray-500"
+            style="filter: invert(80%)"
+          >
+            <img
+              src="public/icons/linkedin.svg"
+              alt="linkedin"
+              className="size-5"
+            />
+          </a>
+          <a
+            href="https://x.com/KetanSharm911"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-black transition-colors duration-500 ease-in-out hover:text-gray-500"
+            style="filter: invert(80%)"
+          >
+            <img
+              src="public/icons/twitter.svg"
+              alt="twitter"
+              className="size-5"
+            />
+          </a>
+          <a
+            href="https://github.com/ketansharma91"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-black transition-colors duration-500 ease-in-out hover:text-gray-500"
+            style="filter: invert(80%)"
+          >
+            <img
+              src="public/icons/github.svg"
+              alt="github"
+              className="size-5"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/ketansharma911/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-black transition-colors duration-500 ease-in-out hover:text-gray-500"
+            style="filter: invert(80%)"
+          >
+            <img
+              src="public/icons/instagram.svg"
+              alt="instagram"
+              style="width: 25px"
+            />
+          </a>
+        </div>
+
+        <!-- <a
+          href="#privacy-policy"
+          class="text-center text-sm hover:underline md:text-right"
+        >
+          Privacy Policy
+        </a> -->
+      </div>
+    </footer>
+
+    <script>
+      const books = [
+        {
+          title: "Never Split the Difference",
+          desc: "Negotiation techniques from an FBI hostage negotiator. Learn how to read people, build trust, and get better outcomes even in tense situations. Tactical empathy and practical strategies make this a must-read.",
+        },
+        {
+          title: "The Righteous Mind",
+          desc: "Explore why people have different moral and political perspectives. Understand the psychology behind judgment and ethics, and navigate conflicts with empathy and insight.",
+        },
+        {
+          title: "Games People Play",
+          desc: "Classic on social interactions and hidden dynamics in everyday relationships. Recognize manipulative patterns and improve communication for personal and professional growth.",
+        },
+        {
+          title: "The Laws of Human Nature",
+          desc: "Master understanding people's drives and behaviors. Essential for leadership and influence. Anticipate actions and interact with people more effectively.",
+        },
+        {
+          title: "The Art of Seduction",
+          desc: "Learn historical strategies of persuasion and charm. Applies to personal and professional influence, helping you understand social dynamics and human behavior.",
+        },
+        {
+          title: "The 48 Laws of Power",
+          desc: "Timeless strategies for gaining, maintaining, and protecting power. A controversial yet practical guide to understanding influence in all areas of life.",
+        },
+        {
+          title: "How to Win Friends and Influence People",
+          desc: "Dale Carnegie’s classic guide to communication and relationship-building. Learn to connect with people, influence effectively, and create lasting relationships.",
+        },
+        {
+          title: "Fastlane Millionaire",
+          desc: "Roadmap to financial freedom and entrepreneurship. Focuses on unconventional wealth creation and strategies to accelerate success.",
+        },
+        {
+          title: "The Happiness Advantage",
+          desc: "Positive psychology principles for personal and professional success. Learn how cultivating happiness fuels productivity, creativity, and achievement.",
+        },
+        {
+          title: "Mindset",
+          desc: "Carol Dweck explores growth vs. fixed mindsets. Learn to embrace challenges, build resilience, and achieve personal growth.",
+        },
+        {
+          title: "Atomic Habits",
+          desc: "James Clear teaches how small habits compound into major results. Build good habits, break bad ones, and create lasting personal change.",
+        },
+        {
+          title: "Thinking, Fast and Slow",
+          desc: "Daniel Kahneman explains the two systems of thinking: intuitive and deliberate. Gain insights into decision-making and human cognition.",
+        },
+        {
+          title: "The 7 Habits of Highly Effective People",
+          desc: "Stephen Covey outlines habits for personal and professional effectiveness. Focus on principle-centered living and growth.",
+        },
+        {
+          title: "Eat That Frog",
+          desc: "Brian Tracy's guide to beating procrastination and increasing productivity. Offers 21 practical strategies to get more done in less time.",
+        },
+        {
+          title: "Getting Things Done",
+          desc: "David Allen’s stress-free productivity method. Organize tasks and projects efficiently to reduce stress and maximize output.",
+        },
+        {
+          title: "The Organized Mind",
+          desc: "Daniel J. Levitin explains thinking clearly in the information age. Learn to manage attention, information, and decision-making effectively.",
+        },
+        {
+          title: "13 Things Mentally Strong People Don’t Do",
+          desc: "Amy Morin shares habits to avoid for mental resilience. Build inner strength by learning what behaviors hold you back.",
+        },
+        {
+          title: "Rich Dad Poor Dad",
+          desc: "Robert Kiyosaki contrasts two approaches to money and investing. Learn financial literacy and strategies for wealth creation.",
+        },
+        {
+          title: "The Psychology of Money",
+          desc: "Insights on money and behavior. Understand how emotions and decisions impact wealth accumulation and financial success.",
+        },
+        {
+          title: "Zero to One",
+          desc: "Peter Thiel’s guide to startups and innovation. Learn to create unique value and build transformative companies.",
+        },
+        {
+          title: "The Lean Startup",
+          desc: "Eric Ries teaches iterative product development and startup efficiency. Focus on testing, learning, and adapting quickly.",
+        },
+        {
+          title: "Common Stocks and Uncommon Profits",
+          desc: "Philip Fisher explains strategies for investing in exceptional companies. Learn to analyze growth potential and long-term success.",
+        },
+        {
+          title: "The 4-Hour Workweek",
+          desc: "Tim Ferriss’ guide to lifestyle design. Learn to automate, outsource, and optimize work for more freedom and flexibility.",
+        },
+        {
+          title: "So Good They Can’t Ignore You",
+          desc: "Cal Newport argues passion comes after skill mastery. Focus on developing rare and valuable abilities to achieve career satisfaction.",
+        },
+        {
+          title: "Stay Hungry Stay Foolish",
+          desc: "Autobiography of Steve Jobs and other visionaries. Inspires entrepreneurship, innovation, and taking bold risks.",
+        },
+        {
+          title: "Bhabhi Ji Papad",
+          desc: "Story of how a housewife built a 100 crore empire. Inspires entrepreneurship and innovative thinking in challenging circumstances.",
+        },
+        {
+          title: "The Millionaire Fastlane",
+          desc: "Accelerate wealth creation by leveraging unconventional business and investment strategies. Break free from the slow-lane approach.",
+        },
+        {
+          title: "The 10X Rule",
+          desc: "Grant Cardone emphasizes massive action and ambitious goals. Learn to multiply your efforts to achieve extraordinary success.",
+        },
+        {
+          title: "The Intelligent Investor",
+          desc: "Benjamin Graham’s classic on value investing. Provides principles to invest wisely and minimize risk.",
+        },
+        {
+          title: "The $100 Startup",
+          desc: "Chris Guillebeau shows how to start a profitable business with limited resources. Focuses on creativity, practicality, and independence.",
+        },
+        {
+          title: "Think and Grow Rich",
+          desc: "Napoleon Hill’s timeless guide to wealth mindset. Teaches goal setting, persistence, and success habits.",
+        },
+        {
+          title: "The Challenger Sale",
+          desc: "Innovative approach to sales. Learn to teach, tailor, and take control to win big clients and close deals effectively.",
+        },
+        {
+          title: "Selling to Big Companies",
+          desc: "Practical guide to B2B sales strategy. Navigate corporate sales processes and maximize revenue potential.",
+        },
+      ];
+
+      const container = document.getElementById("books-container");
+      books.forEach((book) => {
+        const div = document.createElement("div");
+        div.className = "space-y-2";
+        div.innerHTML = `
+          <h2 class="text-2xl font-semibold text-gray-900">${book.title}</h2>
+          <p class="text-gray-700 leading-relaxed">${book.desc}</p>
+        `;
+        container.appendChild(div);
+      });
+    </script>
+  </body>
+</html>
