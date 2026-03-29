@@ -13,6 +13,11 @@ const Dock = () => {
     const dockRef = useRef<any>(null);
 
     useGSAP(() => {
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        const isTouchDevice = "ontouchstart" in window;
+
+        if (isMobile || isTouchDevice) return;
+
         const dock = dockRef.current;
 
         if (!dock) return;

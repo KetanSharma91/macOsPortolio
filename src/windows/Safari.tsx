@@ -12,12 +12,12 @@ const Safari = () => {
 
                 <PanelLeft className='ml-10 icon' />
 
-                <div className="flex items-center gap-1 ml-5">
+                <div className="flex items-center gap-1 ml-5 max-sm:hidden">
                     <ChevronLeft className='icon' />
                     <ChevronRight className='icon' />
                 </div>
 
-                <div className='flex-1 flex-center gap-3'>
+                <div className='flex-1 flex-center gap-3 max-sm:hidden'>
                     <ShieldHalf className='icon' />
 
                     <div className="search">
@@ -31,7 +31,7 @@ const Safari = () => {
                     </div>
                 </div>
 
-                <div className="flex items-center gap-5">
+                <div className="flex items-center gap-5 max-sm:hidden">
                     <Share className='icon' />
                     <Plus className='icon' />
                     <Copy className='icon' />

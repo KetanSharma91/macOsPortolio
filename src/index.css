@@ -89,7 +89,7 @@ body {
   }
 
   #welcome {
-    @apply text-gray-200 flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none max-sm:h-screen max-sm:hidden max-sm:px-10;
+    @apply text-gray-200 flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none max-sm:h-screen;
 
     .small-screen {
       @apply sm:hidden m-7 bg-red-300/20 backdrop-blur-lg p-3 rounded-md absolute top-10;
@@ -101,10 +101,22 @@ body {
   }
 
   #dock {
-    @apply absolute bottom-5 left-1/2 -translate-x-1/2 z-50 select-none max-sm:hidden;
+    @apply absolute bottom-5 left-1/2 -translate-x-1/2 z-50 select-none;
 
     .dock-container {
-      @apply bg-white/20 backdrop-blur-md justify-between rounded-2xl p-1.5 flex items-end gap-1.5;
+      @apply sm:bg-white/20 sm:backdrop-blur-md justify-between rounded-2xl p-1.5 flex items-end gap-1.5;
+
+      /* moblie css  */
+
+      div {
+        &:nth-child(3) {
+          @apply max-sm:hidden!;
+        }
+
+        &:last-child {
+          @apply max-sm:hidden!;
+        }
+      }
     }
 
     .tooltip {
@@ -112,7 +124,7 @@ body {
     }
 
     .dock-icon {
-      @apply size-14 3xl:size-20 cursor-pointer;
+      @apply size-14 3xl:size-20 cursor-pointer max-sm:size-20;
 
       img {
         @apply object-cover object-center;
@@ -438,8 +450,7 @@ body {
 #resume.fullscreen,
 #safari.fullscreen,
 #resume.fullscreen,
-#termial.fullscreen,
-#dock.fullscreen,
+#terminal.fullscreen,
 #txtfile.fullscreen,
 #imgfile.fullscreen,
 /* #contact.fullscreen, */
@@ -458,5 +469,101 @@ body {
 #txtfile.fullscreen {
   img {
     @apply w-75;
+  }
+}
+
+/* ---------------------------- mobile css -------------------------------------------- */
+
+#finder,
+#resume,
+#safari,
+#resume,
+#terminal,
+#txtfile,
+#imgfile,
+#contact,
+#photos {
+  @apply max-sm:left-0 max-sm:top-15 max-sm:right-0 max-sm:rounded-none max-sm:w-full max-sm:h-[95%] max-sm:min-h-[95%] max-sm:min-w-full;
+
+  #window-controls {
+    @apply touch-auto;
+
+    div {
+      @apply max-sm:hidden max-sm:w-14.5;
+
+      &:first-child {
+        @apply sm:hidden max-sm:flex touch-auto;
+
+        p {
+          @apply touch-auto;
+        }
+      }
+    }
+  }
+}
+
+#resume {
+  canvas {
+    @apply max-sm:w-full! max-sm:h-auto!;
+  }
+}
+
+#safari {
+  .blog {
+    img {
+      @apply w-15 h-auto;
+    }
+  }
+}
+
+#photos {
+  .sidebar {
+    @apply max-sm:hidden;
+  }
+}
+
+#finder {
+  .sidebar {
+    @apply max-sm:hidden;
+  }
+
+  .content {
+    @apply max-sm:flex max-sm:flex-wrap;
+
+    li {
+      @apply max-sm:relative max-sm:top-0 max-sm:left-0;
+    }
+  }
+}
+
+#terminal {
+  ul {
+    li {
+      @apply max-sm:flex-row max-sm:items-start max-sm:mt-5;
+
+      ul {
+        @apply max-sm:flex-col max-sm:items-start;
+
+        li {
+          @apply max-sm:mt-0;
+        }
+      }
+    }
+  }
+}
+
+#contact {
+  ul {
+    @apply max-sm:flex-col;
+    li {
+      @apply w-78;
+    }
+  }
+}
+
+@media (width < 40rem) {
+  html,
+  body {
+    overflow-y: hidden;
   }
 }

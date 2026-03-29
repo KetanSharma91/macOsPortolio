@@ -14,6 +14,13 @@ const Navbar = () => {
     const [theme, setTheme] = useState("light");
 
     useEffect(() => {
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        const isTouchDevice = "ontouchstart" in window;
+
+        if (isMobile || isTouchDevice) {
+            setTheme("dark");
+        };
+
         const root = window.document.documentElement;
 
         if (theme === "dark") {

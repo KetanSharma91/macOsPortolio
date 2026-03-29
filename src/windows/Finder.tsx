@@ -22,7 +22,7 @@ const Finder = () => {
         if (['fig', 'url'].includes(item.fileType) && item.href) {
             if (item.href === "inventory_mangament_app.apk") {
                 const link = document.createElement("a");
-                link.href = "https://github.com/KetanSharma91/macOsPortolio/releases/download/v1.0/inventory_management_app.apk";
+                link.href = "https://github.com/KetanSharma91/macOsPortolio/releases/download/v1.0.0/inventory_mangament_app.apk";
                 link.download = "inventory_management_app.apk";
                 link.click();
                 return;

@@ -7,6 +7,7 @@ import { Draggable } from "gsap/all";
 const WindowWrapper = (Component: any, windowKey: string) => {
 
     const Wrapped = (props: any) => {
+
         const { focusWindow, windows }: any = useWindowStore();
         const { isOpen, zIndex, isFullScreen } = windows[windowKey];
         const ref = useRef<any>(null);
@@ -31,6 +32,11 @@ const WindowWrapper = (Component: any, windowKey: string) => {
         }, [isOpen]);
 
         useGSAP(() => {
+            const isMobile = window.matchMedia("(max-width: 768px)").matches;
+            const isTouchDevice = "ontouchstart" in window;
+
+            if (isMobile || isTouchDevice) return;
+
             const el = ref.current;
 
             if (!el) return;
